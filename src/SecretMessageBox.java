@@ -16,9 +16,10 @@ import javax.swing.JOptionPane;
 public class SecretMessageBox {
 
 	// 0. Make a main method and put steps 1-5 inside it
+public static void main(String[] args) {
 	
 	// 1. Set the passcode in a String variable
-	
+	String passcode = "1234";
 	// 2. Using a pop-up, ask for a secret message and store it in a variable
 
 	// 3. Ask your friend for the passcode and store it in a variable
@@ -29,4 +30,5 @@ public class SecretMessageBox {
 
 	// [optional] 6. Have your friend also enter a username, and make sure it is correct before releasing the secret message.
 
+}
 }
