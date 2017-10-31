@@ -20,15 +20,22 @@ public static void main(String[] args) {
 	
 	// 1. Set the passcode in a String variable
 	String passcode = "1234";
+	String SecretMessage;
 	// 2. Using a pop-up, ask for a secret message and store it in a variable
-
+	
+	SecretMessage= JOptionPane.showInputDialog("Give me a secret messege");
+	String Input;
 	// 3. Ask your friend for the passcode and store it in a variable
-
+Input = JOptionPane.showInputDialog("Whats the password?");
 	// 4. If the passcode matches, show the secret message
-
+if (Input.equalsIgnoreCase(passcode)){
 	// 5. If the passcode does not match, pop-up "INTRUDER!!"
-
+JOptionPane.showMessageDialog(null, SecretMessage);
 	// [optional] 6. Have your friend also enter a username, and make sure it is correct before releasing the secret message.
+}
+else {
+	JOptionPane.showMessageDialog(null, "INTRUDER!!");
+}
+}
+}
 
-}
-}
